@@ -3,7 +3,7 @@ import winshell
 import sys
 import win32com.client
 
-SOURCE = "G:/work/' BoOks/Книга об о. Димитрии/ФОТО"
+SOURCE = "G:/work/' BoOks/Книга об о. Димитрии/!ФОТО по категориям/"
 DESTINATION_DISK = 'C:'
 DESTINATION_PATH = '/temp/'
 DEST = os.path.join(DESTINATION_DISK, DESTINATION_PATH)
