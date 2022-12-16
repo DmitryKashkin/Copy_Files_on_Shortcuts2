@@ -47,7 +47,7 @@ def file_copy(source, destination):
                 file_copy(shortcut.path, os.path.join(destination))
                 continue
         if os.path.isdir(os.path.join(source, item)):
-            if destination == DEST:
+            if (destination == DEST) or (os.path.normpath(SOURCE) in  os.path.normpath(source)): # Если первая итерация или папка - это папка источника а не взята по ярлыку, то копируем с сохранением пути
                 file_copy(os.path.join(source, item), os.path.join(destination, item))
             else:
                 file_copy(os.path.join(source, item), os.path.join(destination))
